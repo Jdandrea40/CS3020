@@ -1,0 +1,10 @@
+C:\Users\Josh D'Andrea\Documents\GitHub\CS3020\Assignment2_Cereal\Assignment2_Cereal\obj\Debug\Assignment2_Cereal.csprojAssemblyReference.cache
+C:\Users\Josh D'Andrea\Documents\GitHub\CS3020\Assignment2_Cereal\Assignment2_Cereal\obj\Debug\Assignment2_Cereal.Form1.resources
+C:\Users\Josh D'Andrea\Documents\GitHub\CS3020\Assignment2_Cereal\Assignment2_Cereal\obj\Debug\Assignment2_Cereal.Properties.Resources.resources
+C:\Users\Josh D'Andrea\Documents\GitHub\CS3020\Assignment2_Cereal\Assignment2_Cereal\obj\Debug\Assignment2_Cereal.csproj.GenerateResource.cache
+C:\Users\Josh D'Andrea\Documents\GitHub\CS3020\Assignment2_Cereal\Assignment2_Cereal\bin\Debug\cereal.csv
+C:\Users\Josh D'Andrea\Documents\GitHub\CS3020\Assignment2_Cereal\Assignment2_Cereal\bin\Debug\Assignment2_Cereal.exe.config
+C:\Users\Josh D'Andrea\Documents\GitHub\CS3020\Assignment2_Cereal\Assignment2_Cereal\bin\Debug\Assignment2_Cereal.exe
+C:\Users\Josh D'Andrea\Documents\GitHub\CS3020\Assignment2_Cereal\Assignment2_Cereal\bin\Debug\Assignment2_Cereal.pdb
+C:\Users\Josh D'Andrea\Documents\GitHub\CS3020\Assignment2_Cereal\Assignment2_Cereal\obj\Debug\Assignment2_Cereal.exe
+C:\Users\Josh D'Andrea\Documents\GitHub\CS3020\Assignment2_Cereal\Assignment2_Cereal\obj\Debug\Assignment2_Cereal.pdb
