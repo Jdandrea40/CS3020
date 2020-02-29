@@ -9,16 +9,18 @@ namespace Assignment2_Cereal
 {
     class CerealLoader
     {
-        List<Cereal> allCereals = new List<Cereal>();
+        public List<Cereal> allCereals = new List<Cereal>();
+        public string[] identifiers;
         public void ReadCSV()
         {
+            Console.WriteLine("READING");
             // Creates a StreamReader to read the csv file
             StreamReader reader = new StreamReader("cereal.csv");
             try
             {   
                 // used to get the forst row of Identifiers
                 string readID = reader.ReadLine();
-                string[] identifiers = readID.Split(',');
+                identifiers = readID.Split(',');
 
                 // A variable to store an entire string of data
                 string csvValues;

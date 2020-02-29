@@ -12,22 +12,22 @@ namespace Assignment2_Cereal
     /// </summary>
     class Cereal
     {
-        string name;
-        char mfr;
-        char type;
-        int calories;
-        int protein;
-        int fat;
-        int sodium;
-        float fiber;
-        float carbs;
-        int sugars;
-        int potassium;
-        int vitamins;
-        int shelfLife;
-        float weight;
-        float cups;
-        double rating;
+        public string name;
+        public char mfr;
+        public char type;
+        public int calories;
+        public int protein;
+        public int fat;
+        public int sodium;
+        public float fiber;
+        public float carbs;
+        public int sugars;
+        public int potassium;
+        public int vitamins;
+        public int shelfLife;
+        public float weight;
+        public float cups;
+        public double rating;
 
         /// <summary>
         /// Cereal constructor
