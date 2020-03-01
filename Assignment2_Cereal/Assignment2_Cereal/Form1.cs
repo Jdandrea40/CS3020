@@ -110,8 +110,8 @@ namespace Assignment2_Cereal
                 where (CheckLife.Checked ? cereals.shelfLife >= (int)ShelfLifeUpDown.Value : cereals.shelfLife >= ShelfLifeUpDown.Minimum)
                 where (CheckServings.Checked ? cereals.cups <= (float)ServingsUpDown.Value : cereals.cups >= (float)ServingsUpDown.Minimum)
                 where (CheckRating.Checked ? cereals.rating >= (double)RatingUpDown.Value : cereals.rating >= (double)RatingUpDown.Minimum)
-                where (CheckCold.Checked && cereals.type == 'C')
-                where (CheckHot.Checked && cereals.type == 'H')
+                where ((CheckCold.Checked && cereals.type == 'C') || (CheckHot.Checked && cereals.type == 'H'))
+
                 select cereals;
 
             foreach (var c in sortedCereals)

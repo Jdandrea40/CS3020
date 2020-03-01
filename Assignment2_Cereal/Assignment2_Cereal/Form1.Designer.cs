@@ -35,7 +35,7 @@
             this.CaloriesLabel = new System.Windows.Forms.Label();
             this.ProteinLabel = new System.Windows.Forms.Label();
             this.ProteinUpDown = new System.Windows.Forms.NumericUpDown();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.RefineLayouPanel = new System.Windows.Forms.TableLayoutPanel();
             this.FatLabel = new System.Windows.Forms.Label();
             this.FatUpDown = new System.Windows.Forms.NumericUpDown();
             this.SodiumLabel = new System.Windows.Forms.Label();
@@ -75,7 +75,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.SortedCerealList)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CaloriesUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ProteinUpDown)).BeginInit();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.RefineLayouPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.FatUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SodiumUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.FiberUpDown)).BeginInit();
@@ -90,7 +90,7 @@
             // 
             // SortButton
             // 
-            this.SortButton.Location = new System.Drawing.Point(10, 724);
+            this.SortButton.Location = new System.Drawing.Point(66, 763);
             this.SortButton.Name = "SortButton";
             this.SortButton.Size = new System.Drawing.Size(166, 56);
             this.SortButton.TabIndex = 0;
@@ -106,15 +106,16 @@
             this.CerealGridView.Location = new System.Drawing.Point(12, 12);
             this.CerealGridView.Name = "CerealGridView";
             this.CerealGridView.RowHeadersWidth = 51;
-            this.CerealGridView.Size = new System.Drawing.Size(1199, 475);
+            this.CerealGridView.Size = new System.Drawing.Size(1199, 350);
             this.CerealGridView.TabIndex = 1;
             // 
             // SortedCerealList
             // 
             this.SortedCerealList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.SortedCerealList.Location = new System.Drawing.Point(364, 493);
+            this.SortedCerealList.Location = new System.Drawing.Point(314, 368);
             this.SortedCerealList.Name = "SortedCerealList";
-            this.SortedCerealList.Size = new System.Drawing.Size(847, 294);
+            this.SortedCerealList.RowHeadersWidth = 51;
+            this.SortedCerealList.Size = new System.Drawing.Size(897, 389);
             this.SortedCerealList.TabIndex = 5;
             // 
             // CaloriesUpDown
@@ -124,7 +125,7 @@
             0,
             0,
             0});
-            this.CaloriesUpDown.Location = new System.Drawing.Point(74, 3);
+            this.CaloriesUpDown.Location = new System.Drawing.Point(80, 6);
             this.CaloriesUpDown.Maximum = new decimal(new int[] {
             160,
             0,
@@ -137,7 +138,7 @@
             // CaloriesLabel
             // 
             this.CaloriesLabel.AutoSize = true;
-            this.CaloriesLabel.Location = new System.Drawing.Point(3, 0);
+            this.CaloriesLabel.Location = new System.Drawing.Point(6, 3);
             this.CaloriesLabel.Name = "CaloriesLabel";
             this.CaloriesLabel.Size = new System.Drawing.Size(47, 13);
             this.CaloriesLabel.TabIndex = 7;
@@ -146,7 +147,7 @@
             // ProteinLabel
             // 
             this.ProteinLabel.AutoSize = true;
-            this.ProteinLabel.Location = new System.Drawing.Point(3, 26);
+            this.ProteinLabel.Location = new System.Drawing.Point(6, 32);
             this.ProteinLabel.Name = "ProteinLabel";
             this.ProteinLabel.Size = new System.Drawing.Size(40, 13);
             this.ProteinLabel.TabIndex = 8;
@@ -154,7 +155,7 @@
             // 
             // ProteinUpDown
             // 
-            this.ProteinUpDown.Location = new System.Drawing.Point(74, 29);
+            this.ProteinUpDown.Location = new System.Drawing.Point(80, 35);
             this.ProteinUpDown.Maximum = new decimal(new int[] {
             6,
             0,
@@ -164,75 +165,76 @@
             this.ProteinUpDown.Size = new System.Drawing.Size(48, 20);
             this.ProteinUpDown.TabIndex = 9;
             // 
-            // tableLayoutPanel1
+            // RefineLayouPanel
             // 
-            this.tableLayoutPanel1.ColumnCount = 3;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 119F));
-            this.tableLayoutPanel1.Controls.Add(this.ProteinUpDown, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.ProteinLabel, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.CaloriesLabel, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.CaloriesUpDown, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.FatLabel, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.FatUpDown, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.SodiumLabel, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.SodiumUpDown, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.CheckCals, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.CheckProtein, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.CheckFat, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.CheckSodium, 2, 4);
-            this.tableLayoutPanel1.Controls.Add(this.FiberLabel, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.FiberUpDown, 1, 5);
-            this.tableLayoutPanel1.Controls.Add(this.CheckFiber, 2, 5);
-            this.tableLayoutPanel1.Controls.Add(this.CarbLabel, 0, 6);
-            this.tableLayoutPanel1.Controls.Add(this.CarbUpDown, 1, 6);
-            this.tableLayoutPanel1.Controls.Add(this.CheckCarbs, 2, 6);
-            this.tableLayoutPanel1.Controls.Add(this.SugarsLabel, 0, 7);
-            this.tableLayoutPanel1.Controls.Add(this.SugarUpDown, 1, 7);
-            this.tableLayoutPanel1.Controls.Add(this.CheckSugar, 2, 7);
-            this.tableLayoutPanel1.Controls.Add(this.PotassLabel, 0, 8);
-            this.tableLayoutPanel1.Controls.Add(this.PotassUpDown, 1, 8);
-            this.tableLayoutPanel1.Controls.Add(this.CheckPotass, 2, 8);
-            this.tableLayoutPanel1.Controls.Add(this.VitaminLabel, 0, 9);
-            this.tableLayoutPanel1.Controls.Add(this.VitaminUpDown, 1, 9);
-            this.tableLayoutPanel1.Controls.Add(this.CheckVits, 2, 9);
-            this.tableLayoutPanel1.Controls.Add(this.ShelfLifeLabel, 0, 10);
-            this.tableLayoutPanel1.Controls.Add(this.ShelfLifeUpDown, 1, 10);
-            this.tableLayoutPanel1.Controls.Add(this.CheckLife, 2, 10);
-            this.tableLayoutPanel1.Controls.Add(this.ServeSizeLabel, 0, 11);
-            this.tableLayoutPanel1.Controls.Add(this.ServingsUpDown, 1, 11);
-            this.tableLayoutPanel1.Controls.Add(this.CheckServings, 2, 11);
-            this.tableLayoutPanel1.Controls.Add(this.RatingLabel, 0, 12);
-            this.tableLayoutPanel1.Controls.Add(this.CheckRating, 2, 12);
-            this.tableLayoutPanel1.Controls.Add(this.RatingUpDown, 1, 12);
-            this.tableLayoutPanel1.Controls.Add(this.HotColdLabel, 0, 13);
-            this.tableLayoutPanel1.Controls.Add(this.CheckHot, 1, 13);
-            this.tableLayoutPanel1.Controls.Add(this.CheckCold, 2, 13);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 129);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 14;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 34F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 42F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 29F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 10F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(313, 573);
-            this.tableLayoutPanel1.TabIndex = 10;
+            this.RefineLayouPanel.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.InsetDouble;
+            this.RefineLayouPanel.ColumnCount = 3;
+            this.RefineLayouPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.RefineLayouPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.RefineLayouPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.RefineLayouPanel.Controls.Add(this.ProteinUpDown, 1, 1);
+            this.RefineLayouPanel.Controls.Add(this.ProteinLabel, 0, 1);
+            this.RefineLayouPanel.Controls.Add(this.CaloriesLabel, 0, 0);
+            this.RefineLayouPanel.Controls.Add(this.CaloriesUpDown, 1, 0);
+            this.RefineLayouPanel.Controls.Add(this.FatLabel, 0, 2);
+            this.RefineLayouPanel.Controls.Add(this.FatUpDown, 1, 2);
+            this.RefineLayouPanel.Controls.Add(this.SodiumLabel, 0, 4);
+            this.RefineLayouPanel.Controls.Add(this.SodiumUpDown, 1, 4);
+            this.RefineLayouPanel.Controls.Add(this.CheckCals, 2, 0);
+            this.RefineLayouPanel.Controls.Add(this.CheckProtein, 2, 1);
+            this.RefineLayouPanel.Controls.Add(this.CheckFat, 2, 2);
+            this.RefineLayouPanel.Controls.Add(this.CheckSodium, 2, 4);
+            this.RefineLayouPanel.Controls.Add(this.FiberLabel, 0, 5);
+            this.RefineLayouPanel.Controls.Add(this.FiberUpDown, 1, 5);
+            this.RefineLayouPanel.Controls.Add(this.CheckFiber, 2, 5);
+            this.RefineLayouPanel.Controls.Add(this.CarbLabel, 0, 6);
+            this.RefineLayouPanel.Controls.Add(this.CarbUpDown, 1, 6);
+            this.RefineLayouPanel.Controls.Add(this.CheckCarbs, 2, 6);
+            this.RefineLayouPanel.Controls.Add(this.SugarsLabel, 0, 7);
+            this.RefineLayouPanel.Controls.Add(this.SugarUpDown, 1, 7);
+            this.RefineLayouPanel.Controls.Add(this.CheckSugar, 2, 7);
+            this.RefineLayouPanel.Controls.Add(this.PotassLabel, 0, 8);
+            this.RefineLayouPanel.Controls.Add(this.CheckPotass, 2, 8);
+            this.RefineLayouPanel.Controls.Add(this.VitaminLabel, 0, 9);
+            this.RefineLayouPanel.Controls.Add(this.VitaminUpDown, 1, 9);
+            this.RefineLayouPanel.Controls.Add(this.CheckVits, 2, 9);
+            this.RefineLayouPanel.Controls.Add(this.ShelfLifeLabel, 0, 10);
+            this.RefineLayouPanel.Controls.Add(this.ShelfLifeUpDown, 1, 10);
+            this.RefineLayouPanel.Controls.Add(this.CheckLife, 2, 10);
+            this.RefineLayouPanel.Controls.Add(this.ServeSizeLabel, 0, 11);
+            this.RefineLayouPanel.Controls.Add(this.ServingsUpDown, 1, 11);
+            this.RefineLayouPanel.Controls.Add(this.CheckServings, 2, 11);
+            this.RefineLayouPanel.Controls.Add(this.RatingLabel, 0, 12);
+            this.RefineLayouPanel.Controls.Add(this.CheckRating, 2, 12);
+            this.RefineLayouPanel.Controls.Add(this.RatingUpDown, 1, 12);
+            this.RefineLayouPanel.Controls.Add(this.HotColdLabel, 0, 13);
+            this.RefineLayouPanel.Controls.Add(this.CheckHot, 1, 13);
+            this.RefineLayouPanel.Controls.Add(this.CheckCold, 2, 13);
+            this.RefineLayouPanel.Controls.Add(this.PotassUpDown, 1, 8);
+            this.RefineLayouPanel.Location = new System.Drawing.Point(12, 368);
+            this.RefineLayouPanel.Name = "RefineLayouPanel";
+            this.RefineLayouPanel.RowCount = 14;
+            this.RefineLayouPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.RefineLayouPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.RefineLayouPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.RefineLayouPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.RefineLayouPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.RefineLayouPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.RefineLayouPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.RefineLayouPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.RefineLayouPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.RefineLayouPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.RefineLayouPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.RefineLayouPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.RefineLayouPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.RefineLayouPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
+            this.RefineLayouPanel.Size = new System.Drawing.Size(296, 389);
+            this.RefineLayouPanel.TabIndex = 10;
             // 
             // FatLabel
             // 
             this.FatLabel.AutoSize = true;
-            this.FatLabel.Location = new System.Drawing.Point(3, 52);
+            this.FatLabel.Location = new System.Drawing.Point(6, 61);
             this.FatLabel.Name = "FatLabel";
             this.FatLabel.Size = new System.Drawing.Size(42, 13);
             this.FatLabel.TabIndex = 10;
@@ -240,7 +242,7 @@
             // 
             // FatUpDown
             // 
-            this.FatUpDown.Location = new System.Drawing.Point(74, 55);
+            this.FatUpDown.Location = new System.Drawing.Point(80, 64);
             this.FatUpDown.Maximum = new decimal(new int[] {
             5,
             0,
@@ -253,7 +255,7 @@
             // SodiumLabel
             // 
             this.SodiumLabel.AutoSize = true;
-            this.SodiumLabel.Location = new System.Drawing.Point(3, 78);
+            this.SodiumLabel.Location = new System.Drawing.Point(6, 93);
             this.SodiumLabel.Name = "SodiumLabel";
             this.SodiumLabel.Size = new System.Drawing.Size(46, 13);
             this.SodiumLabel.TabIndex = 12;
@@ -266,7 +268,7 @@
             0,
             0,
             0});
-            this.SodiumUpDown.Location = new System.Drawing.Point(74, 81);
+            this.SodiumUpDown.Location = new System.Drawing.Point(80, 96);
             this.SodiumUpDown.Maximum = new decimal(new int[] {
             320,
             0,
@@ -281,7 +283,7 @@
             this.CheckCals.AutoSize = true;
             this.CheckCals.Checked = true;
             this.CheckCals.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CheckCals.Location = new System.Drawing.Point(197, 3);
+            this.CheckCals.Location = new System.Drawing.Point(166, 6);
             this.CheckCals.Name = "CheckCals";
             this.CheckCals.Size = new System.Drawing.Size(15, 14);
             this.CheckCals.TabIndex = 14;
@@ -292,7 +294,7 @@
             this.CheckProtein.AutoSize = true;
             this.CheckProtein.Checked = true;
             this.CheckProtein.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CheckProtein.Location = new System.Drawing.Point(197, 29);
+            this.CheckProtein.Location = new System.Drawing.Point(166, 35);
             this.CheckProtein.Name = "CheckProtein";
             this.CheckProtein.Size = new System.Drawing.Size(15, 14);
             this.CheckProtein.TabIndex = 15;
@@ -303,7 +305,7 @@
             this.CheckFat.AutoSize = true;
             this.CheckFat.Checked = true;
             this.CheckFat.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CheckFat.Location = new System.Drawing.Point(197, 55);
+            this.CheckFat.Location = new System.Drawing.Point(166, 64);
             this.CheckFat.Name = "CheckFat";
             this.CheckFat.Size = new System.Drawing.Size(15, 14);
             this.CheckFat.TabIndex = 16;
@@ -314,7 +316,7 @@
             this.CheckSodium.AutoSize = true;
             this.CheckSodium.Checked = true;
             this.CheckSodium.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CheckSodium.Location = new System.Drawing.Point(197, 81);
+            this.CheckSodium.Location = new System.Drawing.Point(166, 96);
             this.CheckSodium.Name = "CheckSodium";
             this.CheckSodium.Size = new System.Drawing.Size(15, 14);
             this.CheckSodium.TabIndex = 17;
@@ -323,7 +325,7 @@
             // FiberLabel
             // 
             this.FiberLabel.AutoSize = true;
-            this.FiberLabel.Location = new System.Drawing.Point(3, 102);
+            this.FiberLabel.Location = new System.Drawing.Point(6, 122);
             this.FiberLabel.Name = "FiberLabel";
             this.FiberLabel.Size = new System.Drawing.Size(38, 13);
             this.FiberLabel.TabIndex = 18;
@@ -337,7 +339,7 @@
             0,
             0,
             65536});
-            this.FiberUpDown.Location = new System.Drawing.Point(74, 105);
+            this.FiberUpDown.Location = new System.Drawing.Point(80, 125);
             this.FiberUpDown.Maximum = new decimal(new int[] {
             14,
             0,
@@ -352,7 +354,7 @@
             this.CheckFiber.AutoSize = true;
             this.CheckFiber.Checked = true;
             this.CheckFiber.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CheckFiber.Location = new System.Drawing.Point(197, 105);
+            this.CheckFiber.Location = new System.Drawing.Point(166, 125);
             this.CheckFiber.Name = "CheckFiber";
             this.CheckFiber.Size = new System.Drawing.Size(15, 14);
             this.CheckFiber.TabIndex = 20;
@@ -361,7 +363,7 @@
             // CarbLabel
             // 
             this.CarbLabel.AutoSize = true;
-            this.CarbLabel.Location = new System.Drawing.Point(3, 131);
+            this.CarbLabel.Location = new System.Drawing.Point(6, 151);
             this.CarbLabel.Name = "CarbLabel";
             this.CarbLabel.Size = new System.Drawing.Size(54, 13);
             this.CarbLabel.TabIndex = 21;
@@ -375,7 +377,7 @@
             0,
             0,
             65536});
-            this.CarbUpDown.Location = new System.Drawing.Point(74, 134);
+            this.CarbUpDown.Location = new System.Drawing.Point(80, 154);
             this.CarbUpDown.Maximum = new decimal(new int[] {
             23,
             0,
@@ -395,7 +397,7 @@
             this.CheckCarbs.AutoSize = true;
             this.CheckCarbs.Checked = true;
             this.CheckCarbs.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CheckCarbs.Location = new System.Drawing.Point(197, 134);
+            this.CheckCarbs.Location = new System.Drawing.Point(166, 154);
             this.CheckCarbs.Name = "CheckCarbs";
             this.CheckCarbs.Size = new System.Drawing.Size(15, 14);
             this.CheckCarbs.TabIndex = 23;
@@ -404,7 +406,7 @@
             // SugarsLabel
             // 
             this.SugarsLabel.AutoSize = true;
-            this.SugarsLabel.Location = new System.Drawing.Point(3, 166);
+            this.SugarsLabel.Location = new System.Drawing.Point(6, 180);
             this.SugarsLabel.Name = "SugarsLabel";
             this.SugarsLabel.Size = new System.Drawing.Size(46, 13);
             this.SugarsLabel.TabIndex = 24;
@@ -412,7 +414,7 @@
             // 
             // SugarUpDown
             // 
-            this.SugarUpDown.Location = new System.Drawing.Point(74, 169);
+            this.SugarUpDown.Location = new System.Drawing.Point(80, 183);
             this.SugarUpDown.Maximum = new decimal(new int[] {
             15,
             0,
@@ -432,7 +434,7 @@
             this.CheckSugar.AutoSize = true;
             this.CheckSugar.Checked = true;
             this.CheckSugar.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CheckSugar.Location = new System.Drawing.Point(197, 169);
+            this.CheckSugar.Location = new System.Drawing.Point(166, 183);
             this.CheckSugar.Name = "CheckSugar";
             this.CheckSugar.Size = new System.Drawing.Size(15, 14);
             this.CheckSugar.TabIndex = 26;
@@ -441,7 +443,7 @@
             // PotassLabel
             // 
             this.PotassLabel.AutoSize = true;
-            this.PotassLabel.Location = new System.Drawing.Point(3, 200);
+            this.PotassLabel.Location = new System.Drawing.Point(6, 209);
             this.PotassLabel.Name = "PotassLabel";
             this.PotassLabel.Size = new System.Drawing.Size(56, 13);
             this.PotassLabel.TabIndex = 27;
@@ -454,7 +456,7 @@
             0,
             0,
             0});
-            this.PotassUpDown.Location = new System.Drawing.Point(74, 203);
+            this.PotassUpDown.Location = new System.Drawing.Point(80, 212);
             this.PotassUpDown.Maximum = new decimal(new int[] {
             330,
             0,
@@ -474,7 +476,7 @@
             this.CheckPotass.AutoSize = true;
             this.CheckPotass.Checked = true;
             this.CheckPotass.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CheckPotass.Location = new System.Drawing.Point(197, 203);
+            this.CheckPotass.Location = new System.Drawing.Point(166, 212);
             this.CheckPotass.Name = "CheckPotass";
             this.CheckPotass.Size = new System.Drawing.Size(15, 14);
             this.CheckPotass.TabIndex = 29;
@@ -483,7 +485,7 @@
             // VitaminLabel
             // 
             this.VitaminLabel.AutoSize = true;
-            this.VitaminLabel.Location = new System.Drawing.Point(3, 242);
+            this.VitaminLabel.Location = new System.Drawing.Point(6, 238);
             this.VitaminLabel.Name = "VitaminLabel";
             this.VitaminLabel.Size = new System.Drawing.Size(41, 13);
             this.VitaminLabel.TabIndex = 30;
@@ -496,7 +498,7 @@
             0,
             0,
             0});
-            this.VitaminUpDown.Location = new System.Drawing.Point(74, 245);
+            this.VitaminUpDown.Location = new System.Drawing.Point(80, 241);
             this.VitaminUpDown.Name = "VitaminUpDown";
             this.VitaminUpDown.Size = new System.Drawing.Size(48, 20);
             this.VitaminUpDown.TabIndex = 31;
@@ -506,7 +508,7 @@
             this.CheckVits.AutoSize = true;
             this.CheckVits.Checked = true;
             this.CheckVits.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CheckVits.Location = new System.Drawing.Point(197, 245);
+            this.CheckVits.Location = new System.Drawing.Point(166, 241);
             this.CheckVits.Name = "CheckVits";
             this.CheckVits.Size = new System.Drawing.Size(15, 14);
             this.CheckVits.TabIndex = 32;
@@ -515,7 +517,7 @@
             // ShelfLifeLabel
             // 
             this.ShelfLifeLabel.AutoSize = true;
-            this.ShelfLifeLabel.Location = new System.Drawing.Point(3, 271);
+            this.ShelfLifeLabel.Location = new System.Drawing.Point(6, 267);
             this.ShelfLifeLabel.Name = "ShelfLifeLabel";
             this.ShelfLifeLabel.Size = new System.Drawing.Size(41, 13);
             this.ShelfLifeLabel.TabIndex = 33;
@@ -523,7 +525,7 @@
             // 
             // ShelfLifeUpDown
             // 
-            this.ShelfLifeUpDown.Location = new System.Drawing.Point(74, 274);
+            this.ShelfLifeUpDown.Location = new System.Drawing.Point(80, 270);
             this.ShelfLifeUpDown.Maximum = new decimal(new int[] {
             3,
             0,
@@ -538,7 +540,7 @@
             this.CheckLife.AutoSize = true;
             this.CheckLife.Checked = true;
             this.CheckLife.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CheckLife.Location = new System.Drawing.Point(197, 274);
+            this.CheckLife.Location = new System.Drawing.Point(166, 270);
             this.CheckLife.Name = "CheckLife";
             this.CheckLife.Size = new System.Drawing.Size(15, 14);
             this.CheckLife.TabIndex = 35;
@@ -547,7 +549,7 @@
             // ServeSizeLabel
             // 
             this.ServeSizeLabel.AutoSize = true;
-            this.ServeSizeLabel.Location = new System.Drawing.Point(3, 316);
+            this.ServeSizeLabel.Location = new System.Drawing.Point(6, 296);
             this.ServeSizeLabel.Name = "ServeSizeLabel";
             this.ServeSizeLabel.Size = new System.Drawing.Size(65, 13);
             this.ServeSizeLabel.TabIndex = 36;
@@ -561,7 +563,7 @@
             0,
             0,
             65536});
-            this.ServingsUpDown.Location = new System.Drawing.Point(74, 319);
+            this.ServingsUpDown.Location = new System.Drawing.Point(80, 299);
             this.ServingsUpDown.Maximum = new decimal(new int[] {
             125,
             0,
@@ -576,7 +578,7 @@
             this.CheckServings.AutoSize = true;
             this.CheckServings.Checked = true;
             this.CheckServings.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CheckServings.Location = new System.Drawing.Point(197, 319);
+            this.CheckServings.Location = new System.Drawing.Point(166, 299);
             this.CheckServings.Name = "CheckServings";
             this.CheckServings.Size = new System.Drawing.Size(15, 14);
             this.CheckServings.TabIndex = 38;
@@ -585,7 +587,7 @@
             // RatingLabel
             // 
             this.RatingLabel.AutoSize = true;
-            this.RatingLabel.Location = new System.Drawing.Point(3, 336);
+            this.RatingLabel.Location = new System.Drawing.Point(6, 325);
             this.RatingLabel.Name = "RatingLabel";
             this.RatingLabel.Size = new System.Drawing.Size(55, 13);
             this.RatingLabel.TabIndex = 39;
@@ -596,7 +598,7 @@
             this.CheckRating.AutoSize = true;
             this.CheckRating.Checked = true;
             this.CheckRating.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CheckRating.Location = new System.Drawing.Point(197, 339);
+            this.CheckRating.Location = new System.Drawing.Point(166, 328);
             this.CheckRating.Name = "CheckRating";
             this.CheckRating.Size = new System.Drawing.Size(15, 14);
             this.CheckRating.TabIndex = 40;
@@ -610,7 +612,7 @@
             0,
             0,
             65536});
-            this.RatingUpDown.Location = new System.Drawing.Point(74, 339);
+            this.RatingUpDown.Location = new System.Drawing.Point(80, 328);
             this.RatingUpDown.Maximum = new decimal(new int[] {
             93,
             0,
@@ -623,7 +625,7 @@
             // HotColdLabel
             // 
             this.HotColdLabel.AutoSize = true;
-            this.HotColdLabel.Location = new System.Drawing.Point(3, 366);
+            this.HotColdLabel.Location = new System.Drawing.Point(6, 354);
             this.HotColdLabel.Name = "HotColdLabel";
             this.HotColdLabel.Size = new System.Drawing.Size(58, 13);
             this.HotColdLabel.TabIndex = 42;
@@ -634,7 +636,7 @@
             this.CheckHot.AutoSize = true;
             this.CheckHot.Checked = true;
             this.CheckHot.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CheckHot.Location = new System.Drawing.Point(74, 369);
+            this.CheckHot.Location = new System.Drawing.Point(80, 357);
             this.CheckHot.Name = "CheckHot";
             this.CheckHot.Size = new System.Drawing.Size(77, 17);
             this.CheckHot.TabIndex = 43;
@@ -646,7 +648,7 @@
             this.CheckCold.AutoSize = true;
             this.CheckCold.Checked = true;
             this.CheckCold.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CheckCold.Location = new System.Drawing.Point(197, 369);
+            this.CheckCold.Location = new System.Drawing.Point(166, 357);
             this.CheckCold.Name = "CheckCold";
             this.CheckCold.Size = new System.Drawing.Size(81, 17);
             this.CheckCold.TabIndex = 44;
@@ -657,8 +659,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1239, 799);
-            this.Controls.Add(this.tableLayoutPanel1);
+            this.ClientSize = new System.Drawing.Size(1540, 845);
+            this.Controls.Add(this.RefineLayouPanel);
             this.Controls.Add(this.SortedCerealList);
             this.Controls.Add(this.CerealGridView);
             this.Controls.Add(this.SortButton);
@@ -669,8 +671,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.SortedCerealList)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CaloriesUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ProteinUpDown)).EndInit();
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
+            this.RefineLayouPanel.ResumeLayout(false);
+            this.RefineLayouPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.FatUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SodiumUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.FiberUpDown)).EndInit();
@@ -694,7 +696,7 @@
         private System.Windows.Forms.Label CaloriesLabel;
         private System.Windows.Forms.Label ProteinLabel;
         private System.Windows.Forms.NumericUpDown ProteinUpDown;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.TableLayoutPanel RefineLayouPanel;
         private System.Windows.Forms.Label FatLabel;
         private System.Windows.Forms.NumericUpDown FatUpDown;
         private System.Windows.Forms.Label SodiumLabel;
