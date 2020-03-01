@@ -34,7 +34,6 @@ namespace Assignment2_Cereal
                     CreateCereal(values);
                 }
 
-                Console.WriteLine(allCereals.Count);
             }
             catch (Exception e)
             {
