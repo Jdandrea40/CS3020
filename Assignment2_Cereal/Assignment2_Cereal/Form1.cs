@@ -12,9 +12,14 @@ namespace Assignment2_Cereal
 {
     public partial class Form1 : Form
     {
+        // A data table created for the sorted table
         DataTable sortedTable = new DataTable();
-
+        // Cereal Loader object
         CerealLoader cl = new CerealLoader();
+
+        /// <summary>
+        /// Form initialization
+        /// </summary>
         public Form1()
         {
             InitializeComponent();
@@ -22,9 +27,14 @@ namespace Assignment2_Cereal
             this.AutoSizeMode = AutoSizeMode.GrowAndShrink;
         }
 
+        /// <summary>
+        /// Form initialization
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void Form1_Load(object sender, EventArgs e)
         {
-        
+            // Reads the cereal csv and popuates the top data grid
             cl.ReadCSV();
             DataTable table = new DataTable();
 
@@ -49,7 +59,7 @@ namespace Assignment2_Cereal
             #endregion
 
             #region SORTED TABLE COLUMNS
-            //  Creates the Columns fir the Sort Grid View
+            //  Creates the Columns for the Sort Grid View
             sortedTable.Columns.Add(cl.identifiers[0], typeof(string));
             sortedTable.Columns.Add(cl.identifiers[1], typeof(char));
             sortedTable.Columns.Add(cl.identifiers[2], typeof(char));
@@ -82,20 +92,38 @@ namespace Assignment2_Cereal
             CerealGridView.DataSource = table;
         }
 
+        /// <summary>
+        /// Button click event
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SortButton_Click(object sender, EventArgs e)
         {
+            // Adds event to the button
             SortButton.Click += SortButton_Listener;
             Controls.Add(SortButton);
         }
 
+        /// <summary>
+        /// Button click listener
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SortButton_Listener(object sender, EventArgs e)
         {
+            // Clears the sorted table prior to refining
             sortedTable.Clear();
             RefineSearch();
         }
 
+        /// <summary>
+        /// Runs a query and finds the appropriate cereals that match
+        /// </summary>
         void RefineSearch()
         {
+            // Cereal query
+            // Will first check if that category is being used to sort
+            // then either sort against the increment, or just display all cereals in that category
             var sortedCereals =
                 from cereals in cl.allCereals
                 where (CheckCals.Checked ? cereals.calories <= (int)CaloriesUpDown.Value : cereals.calories >= CaloriesUpDown.Minimum)
@@ -113,7 +141,7 @@ namespace Assignment2_Cereal
                 where ((CheckCold.Checked && cereals.type == 'C') || (CheckHot.Checked && cereals.type == 'H'))
 
                 select cereals;
-
+            // Populates the dorted table with the queried seatches
             foreach (var c in sortedCereals)
             {
                 sortedTable.Rows.Add(c.name, c.mfr, c.type, c.calories,
@@ -121,27 +149,8 @@ namespace Assignment2_Cereal
                     c.potassium, c.vitamins, c.shelfLife, c.weight, c.cups, c.rating);
             }
 
+            // the data table for the sorted cereals
             SortedCerealList.DataSource = sortedTable;
         }
-        // updates the serving style to sort by
-        private void ServingStyle_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //if (ServingStyleComboBox.SelectedIndex == 1)
-            //{
-            //    sortType = 'H';
-            //    checkType = true;
-            //}
-            //else if (ServingStyleComboBox.SelectedIndex == 2)
-            //{
-            //    sortType = 'C';
-            //    checkType = true;
-            //}
-            //else
-            //{
-            //    sortType = ' ';
-            //    checkType = false;
-            //}
-        }
-        // Updates the calories to sort by
     }
 }

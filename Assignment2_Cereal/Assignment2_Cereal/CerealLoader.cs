@@ -7,13 +7,21 @@ using System.IO;
 
 namespace Assignment2_Cereal
 {
+    /// <summary>
+    /// A class used to load in the Cereal CSV and create a cereal/cereal list
+    /// </summary>
     class CerealLoader
     {
+        // List of cereals
         public List<Cereal> allCereals = new List<Cereal>();
+        // Array that contains the column names
         public string[] identifiers;
+
+        /// <summary>
+        /// Reads the CSV and creates a cereal out of the read in data
+        /// </summary>
         public void ReadCSV()
         {
-            Console.WriteLine("READING");
             // Creates a StreamReader to read the csv file
             StreamReader reader = new StreamReader("cereal.csv");
             try

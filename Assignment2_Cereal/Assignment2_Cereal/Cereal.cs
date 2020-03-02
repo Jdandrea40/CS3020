@@ -12,10 +12,11 @@ namespace Assignment2_Cereal
     /// </summary>
     class Cereal
     {
+        #region CEREAL DATA MEMBERS
+
         public string name;
         public char mfr;
         public char type;
-
         public int calories;
         public int protein;
         public int fat;
@@ -29,6 +30,8 @@ namespace Assignment2_Cereal
         public float weight;
         public float cups;
         public double rating;
+
+        #endregion
 
         /// <summary>
         /// Cereal constructor
